@@ -1,262 +1,337 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;1,600&family=Cabin+Sketch:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;1,600&family=Cabin+Sketch:wght@700&family=Outfit:wght@400;700&display=swap");
 :root {
   --white: #ffffff;
   --blue: #a8d8ea;
   --purple: #aa96da;
   --light-pink: #fcbad3;
   --light-yellow: #ffffd2;
-  --dark-green: #194A43;
-  --green: #F1F6F6;
-  --green-2: #D9EBE9;
+  --dark-green: #194a43;
+  --green: #f1f6f6;
+  --green-2: #d9ebe9;
+  --primary: #f92060;
 }
 
-.navbar {
-  padding: 20px 10px;
-}
-
-.navbar-brand {
-  font-size: 30px;
-}
-
-.nav-link {
-  font-size: 20px;
-}
-
-.logo-img {
-  height: 30px;
-  margin-right: 8px;
-}
-
-.text-dark-green {
-  color: var(--dark-green) !important;
-}
-
-.bg-green {
-  background-color: var(--green);
-}
-
-.bg-dark-green {
-  background-color: var(--dark-green);
-}
-
-.nav-link {
-  color: var(--dark-green) !important;
-  opacity: 0.7;
-}
-
-.nav-link.active {
-  opacity: 1;
-}
-
-.green-gradient {
-  background: #a8ff78;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, var(--green), var(--green-2));  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, var(--green), var(--green-2)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-main {
-  /* background-color: var(--green); */
-  color: var(--dark-green);
-}
-
-
-.header-main {
-  font-size: 120px;
-  line-height: 160px;
-  max-width: 360px;
-  font-weight: 700;
-  font-family: sans-serif;
-}
-
-.navbar-brand {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 0px;
-  font-size: 1.25rem;
-  font-weight: 600;
-}
-
-i {
-  margin: 0px 10px;
-}
-
-.map {
-  width: 1000px;
-  height: 350px;
+body {
+  background-color: #f7f4f0;
 }
 
 .banner {
-  height: 60vh;
+  margin-bottom: 100px;
+}
+
+.banner-image {
+  width: 594px;
+}
+.banner-text .heading {
+  max-width: 447px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 74px;
+  text-transform: capitalize;
+  color: #f92060;
+  margin-bottom: 24px;
+}
+
+.banner-text .sub-heading {
+  font-family: "Outfit";
+  font-size: 20px;
+  line-height: 32px;
+  max-width: 440px;
+  margin-bottom: 32px;
+}
+
+.banner-div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 120px;
+}
+
+.banner-btns {
   display: flex;
 }
-
-/**
- * ----------------------------------------
- * animation tracking-in-contract-bck
- * ----------------------------------------
- */
- @-webkit-keyframes tracking-in-contract-bck {
-  0% {
-    letter-spacing: .5em;
-    -webkit-transform: translateZ(200px);
-            transform: translateZ(200px);
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    -webkit-transform: translateZ(0);
-            transform: translateZ(0);
-    opacity: 1;
-  }
-}
-@keyframes tracking-in-contract-bck {
-  0% {
-    letter-spacing: .5em;
-    -webkit-transform: translateZ(200px);
-            transform: translateZ(200px);
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    -webkit-transform: translateZ(0);
-            transform: translateZ(0);
-    opacity: 1;
-  }
-}
-
-.banner-text {
-  font-size: 100px;
-  line-height: 100px;
-  font-family: "Barlow Condensed", sans-serif;
-  display:flex;
+.banner-btns .btn {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 20px;
-  letter-spacing: 10px;
-  -webkit-animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-  animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  padding: 12px;
+  gap: 24px;
+  width: 140px;
+  height: 56px;
+  border-radius: 8px;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
 }
 
-.vertical-items {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+.book-now {
+  color: white;
+  background: var(--primary);
+  margin-right: 24px;
 }
 
-.item {
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: 1.2rem;
-  font-weight: 600;
-  font-style: italic;
-  letter-spacing: 4px;
-  padding: 5px 30px;
-  border: 2px solid var(--green-2);
-  border-radius: 32px;
-  margin: 20px 0px;
-  box-shadow: -3px 6px rgba(36, 35, 35, 0.2);
-  -webkit-animation: scale-in-center 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: scale-in-center 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+.learn-more {
+  width: 140px;
+  border: 1px solid var(--primary);
+  color: var(--primary);
 }
 
-@-webkit-keyframes scale-in-center {
-  0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 1;
-  }
-}
-@keyframes scale-in-center {
-  0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 1;
-  }
+.text-primary {
+  color: var(--primary);
 }
 
-.discover {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  height: 40vh;
+.nav-item .nav-link.active {
+  color: var(--primary) !important;
 }
 
-.discover-heading {
-  color: var(--dark-green);
-  font-size: 50px;
-  font-weight: 500;
+.nav-item .nav-link {
+  color: #000000 !important;
 }
 
-.discover-sub-heading {
-  width: 50vw;
+.width-center {
+  max-width: 1220px;
+  margin: auto;
+}
+
+.services-div {
+  margin-top: 100px;
+}
+
+.services-div .services-heading {
+  width: 1145px;
+  height: 48px;
+  font-family: "Outfit";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  text-transform: capitalize;
+  color: var(--primary);
   text-align: center;
-  margin: 20px 0px;
 }
 
-.services {
+.services-cards {
   display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
 }
 
-.bg-left {
-  width: 50vw;
+.service-card {
+  max-width: 204px;
 }
 
-.bg-left img {
-  width: 100%;
-  opacity: 0.8;
+.service-card-heading {
+  text-align: center;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: capitalize;
+  margin-top: 36px;
+  margin-bottom: 20px;
+  color: #000000;
 }
 
-.services-right {
+.charges-heading {
+  margin-top: 100px;
+  width: 444px;
+  height: 48px;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  text-transform: capitalize;
+  color: var(--primary);
+  margin-bottom: 8px;
+}
+
+.charges-sub-heading {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: capitalize;
+  margin-bottom: 50px;
+}
+
+.price-card {
+  max-width: 288px;
+}
+
+.price-img {
+  width: 288px;
+}
+
+.prices {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.price-card {
+  position: relative;
+  margin-right: 100px;
+  margin-left: 12px;
+  border-radius: 8px;
+}
+
+.offer-img {
+  position: absolute;
+  top: -6px;
+  left: -5px;
+}
+
+.offer-percent {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: "Arial";
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.025em;
+  color: #393939;
+}
+.percent {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20.0699px;
+  line-height: 25px;
+  color: #f32323;
+}
+
+.price-card-body {
+  padding: 16px;
+  background-color: #fff;
+}
+
+.price-card-name {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: capitalize;
+  margin-bottom: 16px;
+}
+
+li.items {
   display: flex;
-  flex-direction: column;
-  padding: 10px 20px;
-  width: 50vw;
-
+  justify-content: space-between;
+  margin-bottom: 16px;
 }
 
-.services-heading {
-  font-weight: 500;
-  font-size: 40px;
-  font-family: "Barlow Condensed", sans-serif;
+.charges-div {
+  margin-bottom: 100px;
 }
 
-.s-li {
-  font-weight: 500;
+.about-us-div {
+  padding: 100px 0px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1220px;
+  margin: auto;
+  gap: 104px;
 }
 
-ol {
-  counter-reset: items;
-  margin: 0px;
-  padding: 0px;
-  padding-left: 10px;
+.about-us-img {
+  width: 520px;
+  height: 407px;
+  background-color: #d9d9d9;
+  border-radius: 8px;
 }
-.s-li {
-  display: block;
-  counter-increment: items;
+
+.about-us-heading {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  text-transform: capitalize;
+  color: var(--primary);
+  margin-bottom: 16px;
 }
-.s-li:before {
-  content: "0" counter(items)". ";
-  font-family: 'Cabin Sketch', cursive;
+
+.about-us-sub-heading {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  text-transform: capitalize;
+  margin-bottom: 24px;
+}
+
+.book-2 {
+  width: 140px;
+  height: 56px;
+  border: 1px solid var(--primary);
+  border-radius: 8px;
+  margin-bottom: 28px;
+}
+
+.about-us-section {
+  margin-bottom: 138px;
+}
+
+.about-us-section .item {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  text-transform: capitalize;
+  color: #000000;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.about-us-section .item i {
+  width: 52px;
+  height: 52px;
+  background: #f2f7ff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 16px;
+}
+
+.contact-us-div {
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1220px;
+  margin: auto;
+  gap: 104px;
+}
+
+.contact-us-heading {
+  font-family: "Outfit";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  text-transform: capitalize;
+  color: var(--primary);
+  margin-bottom: 47px;
+}
+
+footer {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+
+  color: #000000;
+  text-align: center;
+  padding: 60px;
 }
