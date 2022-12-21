@@ -21,9 +21,13 @@ body {
   background-color: var(--background-color);
 }
 
+.navbar-brand {
+  padding-left: 16px;
+}
+
 .banner {
   margin-bottom: 100px;
-  max-width: calc(100vw - 32px);
+  /* max-width: calc(100vw - 32px); */
 }
 
 .banner-image {
@@ -128,7 +132,8 @@ body {
 
 .services-cards {
   display: flex;
-  justify-content: space-between;
+    justify-content: space-around;
+    /* justify-content: space-between; */
   margin-top: 50px;
   flex-wrap: wrap;
 }
@@ -179,10 +184,6 @@ body {
   margin-bottom: 50px;
 }
 
-.price-card {
-  max-width: 288px;
-}
-
 .price-img {
   width: 288px;
   border-top-left-radius: 8px;
@@ -196,9 +197,10 @@ body {
 }
 
 .price-card {
+  max-width: 288px;
   position: relative;
   margin: 12px;
-  margin-right: 100px;
+  margin-right: 50px;
   border-radius: 8px;
 }
 
@@ -262,7 +264,7 @@ li.items {
   max-width: 1220px;
   margin: auto;
   gap: 104px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .about-us-img {
@@ -291,11 +293,12 @@ li.items {
   line-height: 32px;
   text-transform: capitalize;
   margin-bottom: 24px;
+  max-width: 600px;
 }
 
 .book-2 {
-  width: 140px;
-  height: 56px;
+  width: 120px;
+  height: 42px;
   border: 1px solid var(--primary);
   border-radius: 8px;
   margin-bottom: 28px;
@@ -342,7 +345,7 @@ li.items {
   max-width: 1220px;
   margin: auto;
   gap: 104px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .contact-us-heading {
@@ -432,9 +435,100 @@ footer {
   margin-right: 20px;
 }
 
-@media (max-width: 767px) {
+.slick-track, .slick-dotted.slick-slider {
+  padding: 20px !important;
+}
+
+.about-1 {
+  display: none;
+}
+.about-2 {
+  display: block;
+}
+
+@media(max-width: 991px) {
+  .banner-div {
+    padding: 0px 24px;
+    flex-wrap: nowrap;
+  }
   .banner-image {
-    max-width: 540px;
+    max-height: 312px;
+    margin-top: 28px;
+  }
+  .banner-text .heading {
+    line-height: 64px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  .banner-text .sub-heading {
+    font-size: 18px;
+    max-width: 350px;
+    margin-bottom: 18px;
+  }
+  .services-cards {
+    gap: 24px;
+  }
+  .width-center {
+    max-width: calc(100vw - 64px) !important;
+    margin: auto;
+  }
+  .about-us-div, .contact-us-div {
+    gap: 20px;
+    justify-content: space-around;
+    padding: 50px 0px;
+  }
+  .about-us-details, .contact-us-details {
+    max-width: 300px;
+  }
+  .about-us-heading {
+    margin-bottom: 8px;
+  }
+  .about-us-sub-heading {
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 28px;
+  }
+  .about-us-section .item, .contact-us-section .item {
+    margin-bottom: 16px;
+  }
+  .about-us-img {
+    margin:auto;
+  }
+  /* .about-us-div {
+    justify-content: unset;
+    max-width: 100%;
+    padding: 50px;
+    gap: 28px;
+    margin-top: 60px;
+  }
+  .about-us-img {
+    max-width: 90%;
+    width: unset;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+  }
+  .about-1 {
+    display: block;
+    width: 100%;
+  }
+  .about-2 {
+    display: none;
+  } */
+  .charges-heading, .charges-sub-heading {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about-us-div, .contact-us-div, header, .navbar, .fixed-top {
+    max-width: calc(100vw - 64px);
+  }
+}
+
+@media (max-width: 767px) {
+  .banner-image, .about-us-img {
+    width: 100%;
     margin-top: 60px;
   }
 
@@ -459,21 +553,19 @@ footer {
     text-align: start;
     font-size: 36px;
     line-height: 48px;
+    letter-spacing: 1px;
   }
 
   .service-card {
     max-width: 264px;
   }
 
-  .about-us-div {
+  .about-us-div, .contact-us-div, header, .navbar, .fixed-top {
     max-width: calc(100vw - 32px);
   }
 
-  .contact-us-div {
-    max-width: calc(100vw - 32px);
-  }
-
-  header {
-    max-width: calc(100vw - 32px);
+  .contact-us-div, .slick-dotted.slick-slider {
+    width: calc(100vw - 64px);
+    padding: 8px;
   }
 }

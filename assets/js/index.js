@@ -17,23 +17,34 @@ $(window).scroll(function () {
 
 $('.catalogue').slick({
     slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     dots:true,
     variableWidth: true,
     arrows: true,
-    centerMode: true,
+    infinite: false,
+    // centerMode: true,
     responsive: [
       {
+        breakpoint: 1225,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: false,
+          dots: true,
+          // centerMode: true,
+          arrows: false
+        }
+      },{
         breakpoint: 767,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
+          slidesToShow: 2,
+          slidesToScroll: 2,
           infinite: false,
           dots: true,
           centerMode: false,
           arrows: false
         }
-      },]
+      }]
   });
 
   
