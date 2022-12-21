@@ -23,11 +23,13 @@ body {
 
 .banner {
   margin-bottom: 100px;
+  max-width: calc(100vw - 32px);
 }
 
 .banner-image {
-  width: 594px;
+  max-width: 594px;
 }
+
 .banner-text .heading {
   max-width: 447px;
   font-family: "Outfit", sans-serif;
@@ -51,6 +53,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 120px;
+  flex-wrap: wrap;
 }
 
 .banner-btns {
@@ -97,6 +100,12 @@ body {
   color: #000000 !important;
 }
 
+.nav-item .nav-link:hover {
+  color: var(--primary) !important;
+  transform: scale(1.03);
+  transition-delay: 100ms;
+}
+
 .width-center {
   max-width: 1220px;
   margin: auto;
@@ -107,8 +116,7 @@ body {
 }
 
 .services-div .services-heading {
-  width: 1145px;
-  height: 48px;
+  max-width: 1145px;
   font-family: "Outfit";
   font-weight: 700;
   font-size: 36px;
@@ -122,6 +130,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
+  flex-wrap: wrap;
 }
 
 .service-card {
@@ -253,6 +262,7 @@ li.items {
   max-width: 1220px;
   margin: auto;
   gap: 104px;
+  flex-wrap: wrap;
 }
 
 .about-us-img {
@@ -289,10 +299,6 @@ li.items {
   border: 1px solid var(--primary);
   border-radius: 8px;
   margin-bottom: 28px;
-}
-
-.about-us-section {
-  margin-bottom: 138px;
 }
 
 .about-us-section .item,
@@ -336,6 +342,7 @@ li.items {
   max-width: 1220px;
   margin: auto;
   gap: 104px;
+  flex-wrap: wrap;
 }
 
 .contact-us-heading {
@@ -414,4 +421,59 @@ footer {
   font-size: 20px;
   line-height: 25px;
   margin-left: 20px;
+}
+
+.section {
+  scroll-margin-top: 5.2rem;
+}
+
+.logo {
+  width: 48px;
+  margin-right: 20px;
+}
+
+@media (max-width: 767px) {
+  .banner-image {
+    max-width: 540px;
+    margin-top: 60px;
+  }
+
+  .banner-text .heading {
+    font-size: 36px;
+    line-height: 50px;
+    max-width: 388px;
+  }
+
+  .banner-text .sub-heading {
+    font-size: 20px;
+    line-height: 32px;
+    max-width: 418px;
+  }
+
+  .width-center {
+    max-width: calc(100vw - 32px) !important;
+    margin: auto;
+  }
+
+  .services-div .services-heading {
+    text-align: start;
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .service-card {
+    max-width: 264px;
+  }
+
+  .about-us-div {
+    max-width: calc(100vw - 32px);
+  }
+
+  .contact-us-div {
+    max-width: calc(100vw - 32px);
+  }
+
+  header {
+    max-width: calc(100vw - 32px);
+  }
 }
