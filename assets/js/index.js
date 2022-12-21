@@ -1,8 +1,8 @@
 $('.catalogue').slick({
-    slidesToShow: 2,
-    slidesToScroll: 2,
+    slidesToShow: 3,
+    slidesToScroll: 3,
     dots:true,
     variableWidth: true,
-    arrows: false,
+    arrows: true,
     centerMode: true
   });
