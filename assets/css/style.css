@@ -264,7 +264,7 @@ li.items {
   max-width: 1220px;
   margin: auto;
   gap: 104px;
-  /* flex-wrap: wrap; */
+  flex-wrap: nowrap;
 }
 
 .about-us-img {
