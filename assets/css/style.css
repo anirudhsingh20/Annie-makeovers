@@ -453,10 +453,10 @@ footer {
 }
 
 @media(max-width: 991px) {
-  .banner-div {
+  /* .banner-div {
     padding: 0px 24px;
     flex-wrap: nowrap;
-  }
+  } */
   .banner-image {
     max-height: 312px;
     margin-top: 28px;
@@ -526,6 +526,8 @@ footer {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    width: auto;
+    height: auto;
   }
   .about-us-div, .contact-us-div, header, .navbar, .fixed-top {
     max-width: calc(100vw - 64px);
