@@ -537,7 +537,8 @@ footer {
 @media (max-width: 767px) {
   .banner-image, .about-us-img {
     width: 100%;
-    margin-top: 60px;
+    height: auto;
+    /* margin-top: 60px; */
   }
 
   .banner-text .heading {
@@ -583,6 +584,9 @@ footer {
   .contact-us-div, .slick-dotted.slick-slider {
     width: calc(100vw - 64px);
     padding: 8px;
+  }
+  nav {
+    width: 100% !important;
   }
 }
 
