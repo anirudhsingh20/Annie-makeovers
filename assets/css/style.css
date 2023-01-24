@@ -558,10 +558,18 @@ footer {
   }
 
   .services-div .services-heading {
-    text-align: start;
+    text-align: center;
     font-size: 36px;
     line-height: 48px;
     letter-spacing: 1px;
+  }
+
+  .about-us-div {
+    flex-wrap: wrap-reverse;
+  }
+
+  .contact-us-div {
+    flex-wrap: wrap;
   }
 
   .service-card {
