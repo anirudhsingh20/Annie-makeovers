@@ -47,4 +47,7 @@ $('.catalogue').slick({
       }]
   });
 
+$('.book-now-cta').click(function() {
+  window.open("https://wa.me/919871123304?text=Hello%20Annie%27s%20Makeovers%2C%0A%0AI%20would%20like%20to%20request%20a%20booking.", '_blank');
+})
   

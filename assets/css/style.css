@@ -160,6 +160,10 @@ body {
   color: #000000;
 }
 
+.service-card-sub-heading {
+  text-align: justify;
+}
+
 .charges-heading {
   margin-top: 100px;
   width: 444px;
@@ -177,8 +181,8 @@ body {
 .charges-sub-heading {
   font-family: "Outfit";
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
+  font-weight: 500;
+  font-size: 18px;
   line-height: 20px;
   text-transform: capitalize;
   margin-bottom: 50px;
@@ -245,6 +249,8 @@ body {
   line-height: 30px;
   text-transform: capitalize;
   margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
 }
 
 li.items {
@@ -568,4 +574,15 @@ footer {
     width: calc(100vw - 64px);
     padding: 8px;
   }
+}
+
+.starting-from {
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: auto;
+  color: var(--primary);
+}
+
+.price::before {
+  content: "₹ ";
 }
