@@ -558,10 +558,6 @@ footer {
     /* margin-top: 60px; */
   }
 
-  .service-card {
-    max-width: 164px;
-  }
-
   .banner-text .heading {
     font-size: 36px;
     line-height: 50px;
@@ -604,9 +600,6 @@ footer {
 
   .navbar-brand {
     font-size: 18px;
-  }
-  .services-cards {
-    gap: 5px;
   }
 }
 
