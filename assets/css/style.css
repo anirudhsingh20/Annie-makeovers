@@ -232,6 +232,21 @@ body {
   font-weight: 500;
 }
 
+.description {
+  width: 60%;
+  margin-left: auto;
+  margin-top: 20px;
+}
+.description span {
+  display: inline-block;
+  color: #111;
+  margin: 5px 2px;
+  padding: 1px 7px;
+  border-radius: 20px;
+  background-color: var(--yellow);
+  font-weight: 500;
+}
+
 .services-cards {
   display: flex;
   justify-content: space-around;
@@ -666,6 +681,9 @@ footer {
 }
 
 @media (max-width: 767px) {
+  .description {
+    width: 100%;
+  }
   .banner-image,
   .about-us-img {
     width: 100%;
