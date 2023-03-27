@@ -759,3 +759,9 @@ footer {
   flex-wrap: wrap;
   /* align-items: flex-end; */
 }
+
+@media(max-width: 575px){
+  .description span {
+    font-size: 14px;
+  }
+}
